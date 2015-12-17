@@ -215,3 +215,13 @@ div.cursor {
   97%  { background: #000 }
   100% { background: #090 }
 }
+
+@media (max-width: 550px) {
+	.logo-column{
+		width: 55px;
+	}
+	.nav-column{
+		width: 130px;
+		float: right;
+	}
+}
