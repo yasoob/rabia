@@ -123,7 +123,10 @@ i.hero-i{
 .works-body a img{
 	width: 100%;
 }
-.about-body p{
+.works-tagline{
+	margin-top: -2em;
+}
+.about-body p,.works-tagline p{
 	font-size: 20px;
     margin-bottom: 3em;
     font-family: Helvetica Nueue;
