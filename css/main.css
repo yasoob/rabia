@@ -1,0 +1,212 @@
+.wrapper-head{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 3.4em;
+}
+.wrapper-main{
+	background: #ECEAEA;
+    -ms-transform: rotate(-5deg) scale(1.3);
+    -webkit-transform: rotate(-5deg) scale(1.3);
+    transform: rotate(-5deg) scale(1.3);
+    margin-bottom: 9em;
+    overflow: hidden;
+}
+.nav-container{
+	/*width: 90%;
+	max-width: 90%;*/
+	padding-top: 10px; 
+	-ms-transform: rotate(5deg) scale(0.77);
+	-webkit-transform: rotate(5deg) scale(0.77);
+	transform: rotate(5deg) scale(0.77);
+}
+
+.logo img{
+	width: 50px;
+	margin-top: 5px;
+}
+nav ul {
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	margin-top: 20px; 
+}
+nav ul li a{
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all .3s;
+}
+nav ul li a:hover{
+	color: #C7BEBE;
+}
+div.hero{
+	margin-top: 7em;
+	padding-bottom: 1em;
+	margin-bottom: 6em;
+}
+div.hero h3{
+	font-weight: bold;
+}
+div.hero h4{
+    font-size: 3rem;
+    font-weight: bold;
+    /* text-decoration: blink; */
+    color: #AEAFAD;
+}
+div.hero .button{
+	transition: all .4s;
+}
+div.hero .button:hover{
+	color: #FFF;
+	border-color: #AEAFAD;
+	outline: 0;
+	background-color: #AEAFAD;
+}
+i.hero-i{
+	width: 17px;
+	height: 17px;
+	position: relative;
+	display: inline-block;
+	background: url("../images/sprite.png") no-repeat -55px -50px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.svg-pattern{
+	opacity: .1;
+	position: absolute;
+	transform: translateY(-50%) translateX(-10%) scale(1.5) rotate(-5deg);
+}
+.works-title{
+	text-align: center;
+	margin-bottom: 5em;
+}
+.works-title h4{
+	font-weight: bold;
+	display: inline-block;
+    font-size: 27px;
+}
+.works-title span.line{
+	position: absolute;
+    width: 200px;
+    height: 1px;
+    background: #e2e2e3;
+    left: 50%;
+    margin-left: -100px;
+    content: "";
+    bottom: -60px;
+    top: 55px;
+}
+.works-title span.box{
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background: #ffffff;
+	top: 50%;
+	margin-top: -24px;
+	left: 50%;
+	margin-left: -24px;
+}
+.works-title span.box i{
+	position: absolute;
+    width: 17px;
+    height: 17px;
+    background: url("../images/sprite.png") no-repeat -55px -50px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+    content: "";
+}
+.works-body a img{
+	width: 100%;
+}
+.about-body p{
+	font-size: 17px;
+    margin-bottom: 3em;
+}
+.about-body p:last-child{
+	margin-bottom: 0px;
+}
+footer{
+	padding: 10px;
+	border-top: 1px solid #D0CCCC;
+	margin-top: 4em;
+	background: #ECEAEA;
+}
+footer .row{
+	margin: 0 auto;
+	width: 80%;
+}
+footer .row p{
+	padding-top: 5px;
+	margin-bottom: 0px;
+	font-weight: 100;
+	color: grey;
+	font-size: 13px;
+	font-family: HelveticaNeue;
+}
+footer .row ul{
+	float: right;
+	margin-bottom: 0px;
+}
+footer .row ul li{
+	display: inline-block;
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+footer .social a{
+	text-decoration: none;
+	color: black;
+	transition: all .5s;
+}
+footer .social a:hover{
+	color: grey;
+}
+footer .social i{
+	font-size: 21px;
+}
+div.cursor {
+  display: inline-block;
+  background: #111;
+  margin-left: 5px;
+  width: 5px;
+  height: 27px;
+
+  -webkit-animation: blink 1s linear 0s infinite;
+  -moz-animation: blink 2s linear 0s infinite;
+  -ms-animation: blink 2s linear 0s infinite;
+  -o-animation: blink 2s linear 0s infinite;
+}
+@-webkit-keyframes blink {
+  0%   { background: #000 }
+  47%  { background: #0a0 }
+  50%  { background: #0a0 }
+  97%  { background: #000 }
+  100% { background: #000 }
+}
+
+@-moz-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+@-ms-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+@-o-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
