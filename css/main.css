@@ -124,8 +124,9 @@ i.hero-i{
 	width: 100%;
 }
 .about-body p{
-	font-size: 17px;
+	font-size: 20px;
     margin-bottom: 3em;
+    font-family: Helvetica Nueue;
 }
 .about-body p:last-child{
 	margin-bottom: 0px;
