@@ -126,10 +126,10 @@ i.hero-i{
 .works-tagline{
 	margin-top: -2em;
 }
-.about-body p,.works-tagline p{
+.about-body p, .works-tagline p{
 	font-size: 20px;
     margin-bottom: 3em;
-    font-family: Helvetica Nueue;
+    font-family: 'Helvetica Nueue';
 }
 .about-body p:last-child{
 	margin-bottom: 0px;
@@ -163,11 +163,11 @@ footer .row ul li{
 }
 footer .social a{
 	text-decoration: none;
-	color: black;
+	color: #6D6969;
 	transition: all .5s;
 }
 footer .social a:hover{
-	color: grey;
+	color: #ADAAAA;
 }
 footer .social i{
 	font-size: 21px;
