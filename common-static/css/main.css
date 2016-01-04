@@ -248,6 +248,11 @@ form p{
 	background-color: silver;
 	color: white;	
 }
+.twitter{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 3em;
+}
 div.cursor {
   display: inline-block;
   background: #111;
