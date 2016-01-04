@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load flatpages %}
+{% get_flatpages as flatpages %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,13 +42,15 @@
       <div class="container nav-container">
         <div class="row">
           <div class="seven columns logo-column">
-            <a href="index.html" class="logo"><img src="{% static 'images/logo.png' %}"></a>
+            <a href="{% url 'generic.views.index' %}" class="logo"><img src="{% static 'images/logo.png' %}"></a>
           </div>
           <div class="five columns nav-column">
             <nav>
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{% url 'generic.views.index' %}">Home</a></li>
+                {% for page in flatpages %}
+                  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
                 <li><a href="/blog">Blog</a></li>
               </ul>
             </nav>
@@ -57,7 +61,7 @@
             <i class="hero-i"></i>
             <h4>{% block header_title %}Rabia{% endblock %}</h4>
             <h3>{% block header %}I don't want to be good. I want to be great. An aspiring artist, painter and architect {% endblock %}<div class="cursor"></div></h3>
-            <a href="about.html" class="button">About Me</a>
+            {% block about %}<a href="{% url 'about' %}" class="button">About Me</a>{% endblock %}
           </div>
         </div>
         <svg width="1188px" class="svg-pattern" height="159px" viewBox="0 0 1188 219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">

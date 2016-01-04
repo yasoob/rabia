@@ -26,13 +26,15 @@ SECRET_KEY = 'ngl2x=xt7f)$@s5&7s8(@==76sfr#xx9-peq^u3a+^tqv29ppg'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+SITE_ID = 1
 
 # Application definition
 
 INSTALLED_APPS = [
     'generic.apps.GenericConfig',
     'blog.apps.BlogConfig',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,6 +52,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
 ROOT_URLCONF = 'website.urls'

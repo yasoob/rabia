@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block header%}
+{{ flatpage.title }}
+{% endblock %}
+
+{% block about %}
+
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="row about-body">
+      {{ flatpage.content|linebreaks }}
+    </div>
+    <div class="row works-title">
+      <div class="twelves columns">
+        <span class="line">
+          <span class="box"><i></i></span>
+        </span>
+      </div>
+    </div>
+  </div>
+{% endblock %}

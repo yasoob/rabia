@@ -8,3 +8,8 @@ def index(request):
     homepage = HomePage.objects.all()[0]
     context = {'homepage': homepage}
     return render(request, 'index.html', context=context)
+
+def about_us(request):
+    homepage = AboutUs.objects.all()[0]
+    context = {'homepage': homepage}
+    return render(request, 'index.html', context=context)

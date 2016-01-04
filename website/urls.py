@@ -16,12 +16,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.contrib.flatpages import views
 import settings
 
 urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT, 'show_indexes': False}),
-    #url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^about-us/$', views.flatpage, {'url': '/about-us/'}, name='about'),
     url(r'^', include('generic.urls')),
 ]
