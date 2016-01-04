@@ -136,8 +136,8 @@ span.box i{
 }
 .blog-body p, .works-tagline p{
 	font-size: 20px;
-    margin-bottom: 3em;
-    font-family: 'Helvetica Nueue';
+	margin-bottom: 3em;
+	font-family: 'Helvetica Nueue';
 }
 .blog-body p:last-child{
 	margin-bottom: 0px;
@@ -228,6 +228,21 @@ footer .social a:hover{
 }
 footer .social i{
 	font-size: 21px;
+}
+.comment input{
+	width: 100%;
+}
+.comment textarea{
+	width: 100%;
+	min-height: 200px;
+}
+.comment input[type="submit"] {
+	float: right;
+	transition: all .3s;
+}
+.comment input[type="submit"]:hover {
+	background-color: silver;
+	color: white;	
 }
 div.cursor {
   display: inline-block;
