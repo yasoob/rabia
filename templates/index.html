@@ -25,7 +25,7 @@
     <div class="row works-body">
       <div id="mygallery" >
           {% for img in homepage.images.all %}
-          <a href="{{img.Image.url}}">
+          <a href="{{img.image.url}}">
               <img alt="{{img.image.title}}" src="{{img.image.url}}"/>
           </a>
           {% endfor %}

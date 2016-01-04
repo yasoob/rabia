@@ -21,3 +21,6 @@ def about_us(request):
     homepage = AboutUs.objects.all()[0]
     context = {'homepage': homepage}
     return render(request, 'index.html', context=context)
+
+def contact(request):
+	return render(request, 'contact.html')
