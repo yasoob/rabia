@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block header%}
+{{homepage.header}}
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div class="row works-title">
+      <div class="twelves columns">
+        <h4>{{homepage.content_title }}</h4>
+        <span class="line">
+          <span class="box"><i></i></span>
+        </span>
+      </div>
+    </div>
+    <div class="row works-tagline">
+      <div class="twelves columns">
+      {% if homepage %}
+        <p>{{ homepage.content }}
+      {% else %}
+        <p>I have worked dasdsain various capacities. My paintings and relief work is being used to decorate the fabulous homes of nice & amazing individuals. Below is a small sample of some of my work. I hope you like it. I have worked in various capacities. My paintings and relief work is being used to decorate the fabulous homes of nice & amazing individuals. Below is a small sample of some of my work. I hope you like it.</p>
+      {% endif %}
+      </div>
+    </div>
+    <div class="row works-body">
+      <div id="mygallery" >
+          {% for img in homepage.images.all %}
+          <a href="{{img.Image.url}}">
+              <img alt="{{img.image.title}}" src="{{img.image.url}}"/>
+          </a>
+          {% endfor %}
+          <!-- other images... -->
+      </div>
+    </div>
+  </div>
+{% endblock %}
