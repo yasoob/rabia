@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT, 'show_indexes': False}),
-    url(r'^about-us/$', views.flatpage, {'url': '/about-us/'}, name='about'),
+    url(r'^about/$', views.flatpage, {'url': '/about/'}, name='about'),
     url(r'^', include('generic.urls')),
 ]
