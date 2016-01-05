@@ -17,10 +17,5 @@ def resume(request):
         resume_url = 'generic.views.index'
     return redirect(resume_url)
 
-def about_us(request):
-    homepage = AboutUs.objects.all()[0]
-    context = {'homepage': homepage}
-    return render(request, 'index.html', context=context)
-
 def contact(request):
 	return render(request, 'contact.html')

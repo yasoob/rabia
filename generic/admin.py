@@ -4,19 +4,6 @@ from django.contrib.flatpages.admin import FlatPageAdmin
 from django.contrib.flatpages.models import FlatPage
 from django.utils.translation import ugettext_lazy as _
 
-class FlatPageAdmin(FlatPageAdmin):
-    fieldsets = (
-        (None, {'fields': ('url', 'title', 'content')}),
-        (_('Advanced options'), {
-            'classes': ('collapse', ),
-            'fields': (
-                'registration_required',
-                'template_name',
-            ),
-        }),
-    )
-
-
 class HomePageImageInline(admin.TabularInline):
     model = HomePageImage
     extra = 3
@@ -28,7 +15,4 @@ class HomePageAdmin(admin.ModelAdmin):
 
 admin.site.register(HomePage, HomePageAdmin)
 
-# Re-register FlatPageAdmin
-admin.site.unregister(FlatPage)
-admin.site.register(FlatPage, FlatPageAdmin)
 
